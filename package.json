@@ -1,0 +1,30 @@
+{
+  "name": "form",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "bcryptjs": "^2.4.3",
+    "body-parser": "^1.19.1",
+    "cookie": "^0.4.1",
+    "cookie-parser": "^1.4.6",
+    "dotenv": "^10.0.0",
+    "express": "^4.17.2",
+    "hbs": "^4.2.0",
+    "jsdom": "^19.0.0",
+    "jsonwebtoken": "^8.5.1",
+    "mongoose": "^6.1.4",
+    "path": "^0.12.7",
+    "validator": "^13.7.0",
+    "view-engine": "^1.1.1"
+  },
+  "devDependencies": {
+    "mocha": "^1.21.5"
+  },
+  "keywords": [],
+  "description": ""
+}

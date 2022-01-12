@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Registration</title>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js">
+	</script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+	<link rel="stylesheet" href="./css/main.css">
+
+
+	{{!-- <script type="text/javascript">
+		$(document).ready(function(){
+
+			$( "#form1" ).submit(function(event) {
+				event.preventDefault();
+
+				$.ajax({
+					type: 'POST',
+					url: '/',
+					data: $('#form1').serialize(),
+					dataType: "json",
+					success: function(response){
+						//alert("a");
+						//console.log(response.Success);
+						$('#form1')[0].reset();
+
+						document.getElementById("check").innerHTML=response.Success;
+         					//ADD THIS CODE
+         					setTimeout(function(){
+         						document.getElementById("check").innerHTML="";
+         					},3000);
+         					if (response.Success=="You are regestered,You can login now.") {
+         						document.getElementById("aa").click();
+         					};
+         				},
+         				error: function() {
+         				}
+         			})
+			});
+		});
+	</script> --}}
+
+</head>
+
+
+<body>
+<!-- As a link -->
+<nav class="navbar navbar-light bg-light" style="background-color: #e3f2fd;">
+  <a class="navbar-brand" href="/login">Login</a>
+  <a class="navbar-brand" href="/register">Register</a>
+</nav>
+
+		
+		
+		<div>
+			<span>Welcome To Home page <a href=""></a></span>
+		</div>
+
+		</div>
+	</div>
+	<div><a href="/secretpage" id="aa">secretpage</a>
+		</div>
+	<footer>
+        <p>
+       
+    <footer> 
+        </p>
+    </footer>
+</body>
+</html>
