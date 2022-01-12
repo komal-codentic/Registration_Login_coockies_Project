@@ -50,17 +50,19 @@ app.get("/secretpage",auth, (req, res) => {
 app.get("/logout",auth,async(req, res) => {
   try{ 
     console.log(req.user); 
-
-    req.user.tokens=req.user.tokens.filter((currentElement)=>{
-      return currentElement.token!==req.token
-    })
-
+    
+//for single logout from current device
+//     req.user.tokens=req.user.tokens.filter((currentElement)=>{
+//       return currentElement.token!==req.token
+//     })
+    
+    req.user.tokens=[];    
     res.clearCookie("jwt");
 
     console.log("logout succesfully");
 
     await req.user.save();
-    res.render("home");
+    res.redirect("/");
   }
   catch (error) {
     res.status(500).send(error);
